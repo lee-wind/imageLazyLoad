@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片懒加载ES5版</title>
+    <style>
+        *{
+            width: 0;
+            height: 0;
+        }
+        /*window滚动版*/
+        ul{
+            width: 500px;
+            list-style: none;
+        }
+        /*ul(容器container滚动版)*/
+        /*ul{
+            position: relative;
+            width: 500px;
+            height: 800px;
+            list-style: none;
+            overflow-y: scroll;
+        }*/
+        li{
+            width: 400px;
+            height: 250px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<ul class="img-lazy-box">
+    <li>
+        <img data-src="./images/Zyra_Splash_0.jpg" alt="">
+    </li>
+    <li>
+        <img data-src="./images/Ashe_Splash_0.jpg" alt="">
+    </li>
+    <li>
+        <img data-src="./images/Vayne_Splash_3.jpg" alt="">
+    </li>
+    <li>
+        <img data-src="./images/Caitlyn_Splash_3.jpg" alt="">
+    </li>
+    <li>
+        <img data-src="./images/Morgana_Splash_0.jpg" alt="">
+    </li>
+    <li>
+        <img data-src="./images/Leona_Splash_3.jpg" alt="">
+    </li>
+    <li>
+        <img data-src="./images/MissFortune_Splash_0.jpg" alt="">
+    </li>
+    <li>
+        <img data-src="./images/Cassiopeia_Splash_2.jpg" alt="">
+    </li>
+    <li>
+        <img data-src="./images/Irelia_Splash_0.jpg" alt="">
+    </li>
+    <li>
+        <img data-src="./images/Akali_Splash_5.jpg" alt="">
+    </li>
+</ul>
+</body>
+<script src="./js/lazyLoad-es5.js"></script>
+<script>
+    new ImgLazyLoad(window, 'img', 'data-src');
+    //new ImgLazyLoad('.img-lazy-box', 'img', 'data-src');
+</script>
+</html>
