@@ -1,6 +1,3 @@
-/**
- * Created by wind on 2018/7/26.
- */
 function ImgLazyLoad(containerEl, lazyLoadImageEl, lazyLoadImageIdentity) {
     this.containerEl = containerEl;
     this.container = null;

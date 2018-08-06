@@ -1,6 +1,3 @@
-/**
- * Created by wind on 2018/7/26.
- */
 class ImgLazyLoad {
     constructor(containerEl, lazyLoadImageEl, lazyLoadImageIdentity){
         this.containerEl = containerEl;
